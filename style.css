@@ -1,0 +1,194 @@
+/* ========================================
+      AESTHETIC MINT CREAM SOFT THEME
+   ======================================== */
+
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', Segoe UI, Arial, sans-serif;
+}
+body {
+    margin: 0;
+    background: #F9FFFB;   /* Mint Cream backdrop */
+    color: #2E4633;        /* Soft dark green */
+}
+
+/* ========================================
+              NAVBAR (Minimal)
+   ======================================== */
+.navbar {
+    background: #A5D6A7;    /* Soft mint */
+    color: #2E4633;
+    padding: 14px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d9f0df;  /* Soft separator */
+}
+.nav-left {
+    font-weight: 600;
+    font-size: 18px;
+}
+.nav-right a {
+    color: #2E4633;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    opacity: 0.9;
+}
+.nav-right a:hover {
+    opacity: 1;
+}
+.logout {
+    color: #C94D4D !important;
+}
+
+/* ========================================
+              PAGE CONTAINER
+   ======================================== */
+.page-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ========================================
+                 CARDS
+   ======================================== */
+.card {
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #E7F4EC;  /* subtle mint border */
+}
+
+/* stat-style inside home */
+.two-col {
+    display: flex;
+    gap: 18px;
+}
+.stat-card {
+    flex: 1;
+    padding: 16px;
+    border-radius: 12px;
+    background: #F4FBF6; /* light mint box */
+}
+.stat-value {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 6px;
+}
+
+/* ========================================
+                 FORMS
+   ======================================== */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #CCE7D8;
+    background: #FFFFFF;
+}
+button {
+    padding: 10px 16px;
+    background: #66BB6A;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+button:hover {
+    background: #57A65C;
+}
+button.small {
+    padding: 6px 10px;
+    font-size: 14px;
+}
+
+/* ========================================
+                 TABLE
+   ======================================== */
+.full-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.full-table th, .full-table td {
+    padding: 12px;
+    border-bottom: 1px solid #EAF6EF;
+}
+.link-danger {
+    color: #D35454;
+}
+
+/* ========================================
+                CHARTS
+   ======================================== */
+/* Put pie & bar chart side-by-side aesthetic */
+.chart-row {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+}
+.chart-card {
+    flex: 1;
+    background: #FFFFFF;
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid #E7F4EC;
+}
+.chart-card canvas {
+    max-height: 220px !important; /* perfect size */
+}
+
+/* ========================================
+                 MODAL
+   ======================================== */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background: #FFFFFF;
+    padding: 20px;
+    width: 380px;
+    border-radius: 14px;
+    border: 1px solid #E7F4EC;
+}
+.btn-cancel {
+    background: #EAF6EF;
+    color: #2E4633;
+}
+
+/* ========================================
+               AUTH PAGES
+   ======================================== */
+.auth-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+}
+.auth-card {
+    width: 340px;
+    background: #FFFFFF;
+    padding: 24px;
+    border-radius: 14px;
+    border: 1px solid #E7F4EC;
+}
+.auth-card input {
+    border: 1px solid #CCE7D8;
+}
+.error {
+    color: #C94D4D;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
